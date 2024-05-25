@@ -1,0 +1,39 @@
+.home-container{
+    height: 100vh;
+    
+}
+.dashboard-container{
+    background-color: black;
+    height: 100vh;
+}
+.link-tag{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.link-tag:hover{
+    text-decoration: underline springgreen;
+    text-underline-offset: 10px ;
+    transition: 200ms;
+}
+.location-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+@media (max-width:1000px){
+    .head-name{
+        font-size: 40px;
+    }
+    .profile-name{
+        font-size: 30px;
+    }
+    .profle-desig{
+        font-size: 20px;
+    }
+    .link-tag{
+        font-size: 30px;
+    }
+}
