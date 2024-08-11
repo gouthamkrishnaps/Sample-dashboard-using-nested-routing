@@ -4,22 +4,21 @@ import './style.css'
 
 
 function Dashboard() {
-    const location = useLocation();
     const navigate = useNavigate();
     const redirectToDashboard = () => {
-        navigate('/', { state: { from: location.pathname } });
+        navigate('/');
     };
     const redirectToTeams = () => {
-        navigate('/teams', { state: { from: location.pathname } });
+        navigate('/teams');
     };
     const redirectToPayments = () => {
-        navigate('/payments', { state: { from: location.pathname } });
+        navigate('/payments');
     };
     const redirectToAttendance = () => {
-        navigate('/attendance', { state: { from: location.pathname } });
+        navigate('/attendance');
     };
     const redirectToSettings = () => {
-        navigate('/settings', { state: { from: location.pathname } });
+        navigate('/settings');
     };
 
   return (
@@ -29,7 +28,7 @@ function Dashboard() {
             <img className='rounded-circle mt-5' src="https://tse3.explicit.bing.net/th?id=OIP.X6-9dBY_jMvvulC67C1MxgHaHa&pid=Api&P=0&h=220" alt="" width={'100px'} height={'100px'}/>
 
             <h4 className='profile-name text-light mt-4'>Stephan Davis</h4>
-            <h5 className='profle-desig text-secondary  mt-1'>Software Developer</h5>
+            <h5 className='profle-desig text-secondary text-center mt-1'>Software Developer</h5>
         </div>
         <div className="sections d-flex justify-content-center  flex-column mt-5">
             {/* <Link to={'/'} style={{color:'white'}}>Dashboard</Link> */}
